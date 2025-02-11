@@ -476,6 +476,12 @@ namespace BarrageGrab.Modles.ProtoEntity
         [global::ProtoBuf.ProtoMember(19)]
         public PublicAreaCommon publicAreaCommon { get; set; }
 
+        [global::ProtoBuf.ProtoMember(20)]
+        public long userEnterTipType { get; set; }
+
+        [global::ProtoBuf.ProtoMember(21)]
+        public long anchorEnterTipType { get; set; }
+
         [global::ProtoBuf.ProtoContract()]
         public partial class EffectConfig : global::ProtoBuf.IExtensible
         {
@@ -638,6 +644,8 @@ namespace BarrageGrab.Modles.ProtoEntity
         [global::ProtoBuf.ProtoMember(18)]
         public long processAtSeiTimeMs { get; set; }
 
+        [global::ProtoBuf.ProtoMember(24)]
+        public long appId { get; set; }
     }
 
     [global::ProtoBuf.ProtoContract()]
