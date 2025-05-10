@@ -24,7 +24,7 @@ namespace BarrageGrab
         {
             if (!mutex.WaitOne(TimeSpan.Zero, true))
             {
-                Console.WriteLine("另一个实例已在运行。");
+                Console.WriteLine("另一个实例已在运行1。");
                 Console.ReadKey();
                 return;
             }
